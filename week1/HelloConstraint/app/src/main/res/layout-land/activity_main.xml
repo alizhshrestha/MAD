@@ -13,6 +13,8 @@
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
         android:background="@color/colorPrimary"
         android:onClick="showToast"
@@ -20,6 +22,7 @@
         android:textColor="@android:color/white"
         android:textSize="22sp"
         app:layout_constraintBottom_toTopOf="@+id/button_zero"
+        app:layout_constraintEnd_toStartOf="@+id/show_count"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.25" />
@@ -31,6 +34,8 @@
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
         android:layout_marginBottom="100dp"
         android:background="@color/colorPrimary"
         android:onClick="countUp"
@@ -38,6 +43,7 @@
         android:textColor="@android:color/white"
         android:textSize="22sp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/show_count"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_zero"
         app:layout_constraintVertical_bias="1.0" />
@@ -69,13 +75,13 @@
         android:id="@+id/button_zero"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
         android:background="@android:color/darker_gray"
         android:onClick="countZero"
         android:text="@string/button_label_zero"
         android:textColor="@android:color/white"
         android:textSize="22sp"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="140dp" />
+        tools:layout_editor_absoluteY="155dp" />
 </android.support.constraint.ConstraintLayout>
