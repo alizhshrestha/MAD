@@ -5,6 +5,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 
+import com.example.recycleviewownprac.R;
+
 public class SecondActivity extends AppCompatActivity {
 
     private TextView count_textview;

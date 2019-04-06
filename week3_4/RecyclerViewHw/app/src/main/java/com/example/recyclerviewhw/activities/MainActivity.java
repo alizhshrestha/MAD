@@ -1,5 +1,6 @@
 package com.example.recyclerviewhw.activities;
 
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -40,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
         InitializeData();
 
 
+
         // Get a handle to the RecyclerView.
         mRecyclerView = findViewById(R.id.recyclerview);
 // Create an adapter and supply the data to be displayed.
@@ -74,10 +76,13 @@ public class MainActivity extends AppCompatActivity {
 
     public void InitializeData(){
         mReceipes = new LinkedList<Receipe>();
-        mReceipes.add(new Receipe("299537","Title", "overview", "desc", "/0*gMxBDbMRUVUcwrzo.jpg"));
-        mReceipes.add(new Receipe("299537","Title2", "overview2", "desc2", "/0*gMxBDbMRUVUcwrzo.jpg"));
-        mReceipes.add(new Receipe("299537","Title3", "overview3", "desc3", "/0*gMxBDbMRUVUcwrzo.jpg"));
-        mReceipes.add(new Receipe("299537","Title4", "overview4", "desc4", "/0*gMxBDbMRUVUcwrzo.jpg"));
+        mReceipes.add(new Receipe("299537","Curry", "Curry is what Indians eat for breakfast, lunch, and dinner", "Curry is what Indians eat for breakfast, lunch, and dinner\n" +
+                "Talking about India, the first and foremost thing that every Japanese knew is the curry. All the Indian restaurants in Japan have Naan and curry in their menus. It again fixed the Japanese belief that curry is the one and only inevitable food item in India. Some people who have connections with India knew other food items there. But the number of those people are really less.\n" +
+                "Whomever I have talked with in my place, the countryside city of Tajimi, believe that Indian food is all about curry. I have tried to change their concept talking about various other food items we are consuming in our daily diet.", "R.drawable.curry"));
+        mReceipes.add(new Receipe("299537","Misal Pav", "Misal Pav, Maharashtra", "This Maharashtrian delight consists of sprouted moth beans cooked in some spicy gravy peppered with coriander, onions, tomatoes and some crunchy farsan. Team it with some pav (bread) toasted with butter and you might end up saying Jai Maharashtra!", "/0*gMxBDbMRUVUcwrzo.jpg"));
+        mReceipes.add(new Receipe("299537","hyderabadi Biryani", "hyderabadi Biryani, Telangana", "They say a way to a man's heart is through food. Known for their hospitality, the Hyderabadis swear by this rule and will kill you with an overdose of love by serving you lots of lip-smacking Biryani.", "/0*gMxBDbMRUVUcwrzo.jpg"));
+        mReceipes.add(new Receipe("299537","Ras Malai", "Ras Malai, Odisha", " \n" +
+                "Store it in the fridge as Ras Malai is best when it's served chilled. A word of caution: This one might not stay in the fridge for long.", "/0*gMxBDbMRUVUcwrzo.jpg"));
 
 
     }

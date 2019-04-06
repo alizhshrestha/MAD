@@ -46,7 +46,7 @@ public class ReceipeDetailActivity extends AppCompatActivity {
             tvDesc.setText(receipe.getReceipeDesc());
             //Picasso.get().load(receipe.getReceipeImage()).into(ivImageView);
 
-            ivImageView.setImageResource(R.drawable.aloo_paratha);
+            ivImageView.setImageResource(receipe.getReceipeImage());
         }
     }
 

@@ -1,5 +1,9 @@
 package com.example.recyclerviewhw.Model;
 
+import android.graphics.drawable.Drawable;
+
+import com.example.recyclerviewhw.R;
+
 import java.io.Serializable;
 
 public class Receipe implements Serializable {
@@ -44,8 +48,8 @@ public class Receipe implements Serializable {
         this.receipeDesc = receipeDesc;
     }
 
-    public String getReceipeImage() {
-        return String.format("https://cdn-images-1.medium.com/max/1600/0*gMxBDbMRUVUcwrzo.jpg", receipeImage);
+    public int getReceipeImage() {
+        return R.drawable.curry;
     }
 
 
